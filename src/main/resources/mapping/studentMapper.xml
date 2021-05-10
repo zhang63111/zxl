@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN" "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<mapper namespace="com.zxl.mapper.StudentMapper">
+    <select id="getAllStudent" resultType="com.zxl.model.Student">
+        select user_id as userId,user_name as userName,password ,sex ,age from user_info limit 10
+    </select>
+</mapper>

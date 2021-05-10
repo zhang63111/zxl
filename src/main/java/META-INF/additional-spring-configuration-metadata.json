@@ -1,0 +1,12 @@
+{"properties": [
+  {
+    "name": "spring.mvc.favicon.enabled",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.mvc.favicon.enabled'"
+  },
+  {
+    "name": "spring.mvc.favicon.enabled",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.mvc.favicon.enabled'"
+  }
+]}

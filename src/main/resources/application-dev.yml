@@ -1,0 +1,31 @@
+server:
+  port: 8080
+debug: false
+spring:
+  datasource:
+    username: root
+    password: xnkjdx604
+    url: jdbc:mysql://localhost:3306/mysystem?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    database: 0 
+    jedis.pool.max-active: 50
+    jedis.pool.max-wait: 3000
+    jedis.pool.max-idle: 20
+    jedis.pool.min-idle: 2
+    timeout: 5000
+#    password: 112233
+
+mybatis:
+  mapper-locations: classpath:mapping/*Mapper.xml
+  type-aliases-package: com.zxl.model.mapper
+ 
+#showSql
+logging:
+  level: 
+    com:
+      zxl: debug
+  file:
+    path: \Java_workspace\log
